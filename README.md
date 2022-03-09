@@ -11,20 +11,21 @@ Repository of my CSS only build Macintosh.
 
 
 ## Proces
-**Week 01**
+
+## Week 01
 Tijdens het eerste gesprek heb ik gekozen voor fysieke interactie/interface. Hierna ben ik opzoek gegaan om iets na te bouwen. Het leek mij wel tof om een PC na te bouwen en dan ook een gedeelte van de interface. Hier heb ik de macintosh van Apple voor gekozen. Voorbeeld hieronder.
 
 <img src="https://photos5.appleinsider.com/gallery/29370-47319-000-3x2-Apple-History-Mac-launch-xl.jpg" alt="macintosh"/>
 
 Nog wel een uitdaging, maar wel leuk!
 
-**Week 02**
+## Week 02
 Ben erg opgeschoten aan mijn macintosh, moet hier en daar nog wel wat gebeuren. Het werken met gradients is nieuw, maar ook dit lukt wel. Toch wordt het nog lastig om hier interactie aan toe te voegen. Maar het gaat sneller dan gedacht.
 
-**Week 03**
+## Week 03
 De macintosh is klaar. Ik heb ook wat gevonden qua interactie: https://codepen.io/Adir-SL/pen/podrmaV?editors=0100. Ik heb dit ook weten om te zetten in mijn eigen project. Ik heb het even via pug gedaan om zo alle "pixels" te kunnen aanmaken. Wel heel tof dat je nu ook kan tekenen op de mac. Zelf ben ik wel tevreden, maar ik hen nog zoveel tijd over. Misschien dat ik ga kijken om nog iets nieuws te doen.
 
-**Week 04**
+## Week 04
 Ik ben soort van opnieuw begonnen. Ik wil kijken of ik iets kan maken met nog meer uitdaging. Ik wil kijken of ik iets kan doen met de Lego blokjes die in de presentatie zaten. 
 
 <img src="https://64.media.tumblr.com/76308f2ca49ebb1cda5b926069c458c8/2d782c45cb91ecfa-d5/s1280x1920/968a8ee03c35a04a849be558bf6bc800a7ed59ea.jpg" alt="lego interfaces" />
