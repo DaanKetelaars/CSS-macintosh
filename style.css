@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+body {
+    font-family: 'Damion', cursive;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/****** MONITOR ******/
+
+/* BASE */
+.monitor {
+    animation: dropIn .8s ease-in;
+    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-1000px);
+    background: conic-gradient(from 142deg at 50% 50%, #7A6C46 -1.76deg, #6F6342 40.95deg, #7A6C46 77.02deg, #A99D7B 80.32deg, #F4ECDF 175.95deg, #D0C6B3 179.33deg, #D0C6B3 254.99deg, #F4ECDF 259.03deg, #A99D7B 354.86deg, #7A6C46 359.24deg, #6F6342 400.95deg);
+    border-radius: 17px;
+    width: 15em;
+    height: 18em;
+    position: relative;
+    box-shadow: 0px 20px 13px -10px rgb(0 0 0 / 50%);
+}
+
+/* LAYER 01 */
+.monitor div:nth-child(1) {
+    width: 13.5em;
+    height: 16em;
+    background: linear-gradient(183deg, #D5CBBC -9.42%, #80704B 96.23%);
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* LAYER 02 */
+.monitor div:nth-child(2) {
+    width: 11em;
+    height: 8.5em;
+    background: conic-gradient(from -47.63deg at 39.68% 45.22%, #39311B -0.78deg, #756846 5.88deg, #554A2E 107.18deg, #92825C 111.49deg, #DBCFB8 168.69deg, #938770 172.91deg, #C4B9A5 176.83deg, #E7DECD 255.7deg, #554A2E 271.3deg, #584D33 349.4deg, #39311B 359.22deg, #756846 365.88deg);
+    border-radius: 9px;
+    position: absolute;
+    z-index: 2;
+    top: 2.5rem;
+}
+
+/* LAYER 03 */
+.monitor div:nth-child(3) {
+    width: 9.5em;
+    height: 7em;
+    background: #000;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 3;
+    top: 3.25rem;
+}
+
+/* LAYER 04 */
+.monitor div:nth-child(4) {
+    width: 8.5em;
+    height: 6em;
+    background: linear-gradient(150deg, rgb(139 171 187) 0%, rgba(210, 240, 255, 1) 69%);
+    border-radius: 9px;
+    position: absolute;
+    z-index: 3;
+    top: 3.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DISK TRAY 01 */
+.monitor div:nth-child(5) {
+    width: 4.5em;
+    height: .5em;
+    background: conic-gradient(from -39.36deg at 49.68% 67.22%, #2B2414 -31.56deg, #2E291E 80.37deg, #4A4231 124.61deg, #A09683 130.55deg, #C9BEA8 134.02deg, #F0E5D0 140.69deg, #C5BAA6 283.97deg, #AAA08B 303.64deg, #736954 306.8deg, #2B2414 313.44deg, #2E291E 810.37deg);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 4;
+    right: 3rem;
+    bottom: 4rem;
+}
+
+/* DISK TRAY 02 */
+.monitor div:nth-child(6) {
+    width: 4em;
+    height: .25em;
+    background: #000;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 5;
+    right: 3.25rem;
+    bottom: 4.1rem;
+}
+
+/* ON/OFF BUTTON */
+.monitor div:nth-child(7) {
+    width: 2em;
+    height: 1.25em;
+    background: #8f815f;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 6;
+    left: 2.7rem;
+    bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/****** END MONITOR ******/
+
+
+
+/****** KEYBOARD ******/
+
+/* BASE */
+.keyboard {
+    position: relative;
+    animation: dropIn .7s ease-in;
+    transform: translateY(-1000px);
+    opacity: 0;
+    animation-fill-mode: forwards;
+    background: conic-gradient(from -220deg at 50% 25%, #7A6C46 -1.76deg, #6F6342 109.95deg, #7A6C46 110.02deg, #A99D7B 111.32deg, #F4ECDF 136deg, #D0C6B3 138.33deg, #D0C6B3 302deg, #F4ECDF 303deg, #A99D7B 324deg, #7A6C46 329deg, #6F6342 430.95deg);
+    border-radius: 3px;
+    height: 6.5em;
+    width: 17.5em;
+    padding: .25rem 0 .5rem 0;
+    margin-top: -0.5rem;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0px 15px 20px -9px rgb(0 0 0 / 75%);
+}
+
+.keyboard::after {
+    content: "";
+    position: absolute;
+    background: #8c8168;
+    transform-style: preserve-3d;
+    height: 1em;
+    width: 17.5em;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    box-shadow: 0px 8px 9px -4px rgb(0 0 0 / 60%);
+    z-index: 10;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    overflow: hidden;
+}
+
+/* KEY */
+.keyboard .keys__layer {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    width: 14em;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+}
+
+.keys__layer li {
+    position: relative;
+    z-index: 100;
+    width: 1.5em;
+    height: 1em;
+    background: linear-gradient(180deg, rgb(227 217 195) 40%, rgb(90 84 67) 100%);
+    clip-path: polygon(10% 35%, 85% 35%, 100% 100%, 0% 100%);
+    overflow: hidden;
+}
+
+.keys__layer li::before {
+    content: "";
+    transform-style: preserve-3d;
+    transform: rotateY(0deg) rotateX(85deg) translateY(-10px) translateZ(32px) translateX(0px);
+    position: absolute;
+    z-index: 100;
+    width: 1.5em;
+    height: 5em;
+    background: #dbd1b9;
+}
+
+/* KEYS LAYER UNDERLAYER */
+.keys__layer li:nth-child(11) {
+    position: absolute;
+    z-index: 99;
+    width: 14em;
+    height: .5em;
+    background: #4b463d;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+    clip-path: inherit;
+    overflow: hidden;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+}
+
+.keys__layer li:nth-child(11)::before {
+    content: "";
+    transform-style: inherit;
+    transform: rotateY(0deg) rotateX(0deg) translateY(0) translateZ(0) translateX(0px);
+    position: relative;
+    width: 0;
+    height: 0;
+    background: none;
+}
+
+/* KEYBOARD UNDERLAYER */
+.keyboard__underlayer {
+    position: absolute;
+    z-index: 98;
+    width: 15em;
+    height: 4em;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(180deg, #D1C6B3 0%, #796B46 100%);
+    clip-path: inherit;
+    overflow: hidden;
+}
+
+/****** END KEYBOARD ******/
+
+
+/****** MAC SHADOW ******/
+.shadow {
+    animation: shadowScale .4s ease-in-out;
+    animation-fill-mode: forwards;
+    background: rgba(0, 0, 0, 0.15);
+    width: 25em;
+    height: 7em;
+    margin-top: -5rem;
+    border-radius: 100%;
+    z-index: -1;
+    filter: blur(.4rem);
+}
+
+/****** END MAC SHADOW ******/
+
+/****** DRAWNG PIXELS ******/
+.drawMe {
+    display: grid;
+    width: 9.5em;
+    height: 7em;
+    grid-template-columns: repeat(70, auto);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.drawMe li {
+    font-size: 0;
+    position: relative;
+    width: .5em;
+    height: .5em;
+    transition: background-color 4000ms linear;
+}
+
+.drawMe li:hover {
+    background-color: black;
+    transition-duration: 10ms;
+}
+
+/****** END DRAWNG PIXELS ******/
+
+
+/****** ANIMATION ON/OFF ******/
+
+a:nth-of-type(1) {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Apple_Computer_Logo_rainbow.svg/1757px-Apple_Computer_Logo_rainbow.svg.png");
+    height: .5em;
+    width: .5em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 .1rem 0 .1rem;
+    filter: grayscale(0);
+}
+
+a:nth-of-type(2) {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Apple_Computer_Logo_rainbow.svg/1757px-Apple_Computer_Logo_rainbow.svg.png");
+    height: .5em;
+    width: .5em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 .1rem 0 .1rem;
+    filter: grayscale(1);
+}
+
+#on {
+    opacity: 0;
+}
+
+#on:target {
+    animation: macOn .6s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes macOn {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    50% {
+        opacity: 0;
+        transform: scaleY(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+/****** END ANIMATION ON/OFF ******/
+
+
+/****** ANIMATION DROPIN ******/
+
+@keyframes dropIn {
+    0% {
+        transform: translateY(-750%);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(-300%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateY(-20%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/****** END ANIMATION DROPIN ******/
+
+
+
+/****** ANIMATION SHADOW ******/
+
+@keyframes shadowScale {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/****** END ANIMATION SHADOW ******/
