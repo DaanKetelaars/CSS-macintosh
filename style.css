@@ -259,17 +259,19 @@ main {
 .drawMe {
     display: grid;
     width: 9.5em;
-    height: 7em;
+    height: 6.5em;
     grid-template-columns: repeat(70, auto);
     border-radius: 4px;
     overflow: hidden;
 }
 
 .drawMe li {
+    --w: 50;
+    --h: 50;
     font-size: 0;
     position: relative;
-    width: .5em;
-    height: .5em;
+    width: calc(var(--w) * 7);
+    width: calc(var(--h) * 7);
     transition: background-color 4000ms linear;
 }
 
